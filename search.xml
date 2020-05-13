@@ -23,6 +23,9 @@
 <p>​    2，数据链路层    </p>
 <p>​    1，物理层   </p>
 ]]></content>
+      <categories>
+        <category>计算机网络</category>
+      </categories>
       <tags>
         <tag>计算机网络</tag>
       </tags>
@@ -74,6 +77,9 @@
 </li>
 </ul>
 ]]></content>
+      <categories>
+        <category>计算机网络</category>
+      </categories>
       <tags>
         <tag>计算机网络</tag>
       </tags>
@@ -91,6 +97,9 @@
 <p>物理层将添加有前导码的比特流变换成相应的信号发送到传输媒体，信号通过传输媒体到达路由器</p>
 <p><img src="/2020/05/07/1-6-3%EF%BC%89%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E5%88%86%E5%B1%82%E6%80%9D%E6%83%B3%E4%B8%BE%E4%BE%8B/1.6.3.png" alt="分层思想"></p>
 ]]></content>
+      <categories>
+        <category>计算机网络</category>
+      </categories>
       <tags>
         <tag>计算机网络</tag>
       </tags>
@@ -169,6 +178,9 @@
 </ul>
 <p><img src="/2020/05/07/1-6-4%EF%BC%89%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E4%B8%AD%E7%9A%84%E4%B8%93%E7%94%A8%E6%9C%AF%E8%AF%AD/1.6.4.png" alt="。。。"></p>
 ]]></content>
+      <categories>
+        <category>计算机网络</category>
+      </categories>
       <tags>
         <tag>计算机网络</tag>
       </tags>
@@ -229,6 +241,9 @@
 </ul>
 <p><img src="/2020/05/07/2-4%EF%BC%89%E7%BC%96%E7%A0%81%E4%B8%8E%E8%B0%83%E5%88%B6/2.4.3.png" alt="。。。"></p>
 ]]></content>
+      <categories>
+        <category>计算机网络</category>
+      </categories>
       <tags>
         <tag>计算机网络</tag>
       </tags>
@@ -259,6 +274,9 @@
 <p>&nbsp;&nbsp;&nbsp;&nbsp;S/N是信噪比，使用分贝（dB）作为度量单位</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;信噪比（dB）=<img src="/2020/05/07/2-5%EF%BC%89%E4%BF%A1%E9%81%93%E7%9A%84%E6%9E%81%E9%99%90%E5%AE%B9%E9%87%8F/2.5.2.png" alt="。。。">（dB）</p>
 ]]></content>
+      <categories>
+        <category>计算机网络</category>
+      </categories>
       <tags>
         <tag>计算机网络</tag>
       </tags>
@@ -299,6 +317,9 @@
 <li>集线器（物理层互联设备）与交换机的区别</li>
 </ul>
 ]]></content>
+      <categories>
+        <category>计算机网络</category>
+      </categories>
       <tags>
         <tag>计算机网络</tag>
       </tags>
@@ -330,6 +351,9 @@
 </li>
 </ul>
 ]]></content>
+      <categories>
+        <category>计算机网络</category>
+      </categories>
       <tags>
         <tag>计算机网络</tag>
       </tags>
@@ -369,6 +393,9 @@
 <p>4、在计算机网络中通常采用<strong>检错重传方式来纠正传输中的差错</strong>，<strong>或者仅仅是丢弃检测到差错的帧</strong>，这取决于数据链路层向其上层提供的是可靠传输服务还是不可靠传输服务。</p>
 </blockquote>
 ]]></content>
+      <categories>
+        <category>计算机网络</category>
+      </categories>
       <tags>
         <tag>计算机网络</tag>
       </tags>
@@ -480,6 +507,9 @@
 <p>&emsp;接收方只有在按序接收数据分组后，接收窗口才能向前滑动。</p>
 <h4 id="例题：-1"><a href="#例题：-1" class="headerlink" title="例题："></a><u>例题</u>：</h4><p><img src="/2020/05/09/3-4%EF%BC%89%E5%8F%AF%E9%9D%A0%E4%BC%A0%E8%BE%93/4.jpg" alt="。。。"></p>
 ]]></content>
+      <categories>
+        <category>计算机网络</category>
+      </categories>
       <tags>
         <tag>计算机网络</tag>
       </tags>
@@ -606,9 +636,11 @@
 <h3 id="2-2、TcpServer"><a href="#2-2、TcpServer" class="headerlink" title="2.2、TcpServer"></a>2.2、TcpServer</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> TCP编程;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.InputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.OutputStream;</span><br><span class="line"><span class="keyword">import</span> java.net.ServerSocket;</span><br><span class="line"><span class="keyword">import</span> java.net.Socket;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * -TCp通信的服务器端：接收客户端的请求，读取客户端发送的数据，给客户端回写数据。</span></span><br><span class="line"><span class="comment"> * -表示服务器的类：</span></span><br><span class="line"><span class="comment"> * ----java.net.ServerSocket：这个类实现了服务器套接字。</span></span><br><span class="line"><span class="comment"> * ----套接字：包含了IP地址和端口号的网络单位。</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * -构造方法：</span></span><br><span class="line"><span class="comment"> * ----ServerSocket(int port) 创建一个服务器套接字，绑定到指定的端口。 </span></span><br><span class="line"><span class="comment"> * ----参数：</span></span><br><span class="line"><span class="comment"> * -------int port：端口号。</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * -服务器端必须明确一件事情，必须的知道是哪一个客户端请求的服务器  所以可以使用accept方法获取到请求的客户端对象Socket。</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * -成员方法：</span></span><br><span class="line"><span class="comment"> * ----Socket accept() 监听要对这个套接字作出的连接并接受它。 </span></span><br><span class="line"><span class="comment"> * ----close()关闭此套接字。</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * -实现步骤：</span></span><br><span class="line"><span class="comment"> * ----1、创建一个服务器端ServerSocket对象和系统要指定的端口号。</span></span><br><span class="line"><span class="comment"> * ----2、使用ServerSocket对象中的方法accept获取到请求客户端的Socket对象。</span></span><br><span class="line"><span class="comment"> * ----3、使用Socket对象中的方法getInputStream()获取网络字节输入流InputStream对象。</span></span><br><span class="line"><span class="comment"> * ----4、使用网络字节输入流InputStream对象中的方法read，读取客户端发送的数据。</span></span><br><span class="line"><span class="comment"> * ----5、使用Socket对象中的方法getOutputStream()获取网络字节输出流OutputStream对象。</span></span><br><span class="line"><span class="comment"> * ----6、使用网络字节输出流OutputStream对象中的方法write，给客户端回写数据。</span></span><br><span class="line"><span class="comment"> * ----7、释放资源（Socket，ServerSocket)</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TcpServer</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">		<span class="comment">//1、创建一个服务器端ServerSocket对象和系统要指定的端口号。</span></span><br><span class="line">		ServerSocket server = <span class="keyword">new</span> ServerSocket(<span class="number">8888</span>); </span><br><span class="line">		<span class="comment">//2、使用ServerSocket对象中的方法accept获取到请求客户端的Socket对象。</span></span><br><span class="line">		Socket socket = server.accept(); </span><br><span class="line">		<span class="comment">//3、使用Socket对象中的方法getInputStream()获取网络字节输入流InputStream对象。</span></span><br><span class="line">		InputStream is = socket.getInputStream(); </span><br><span class="line">		<span class="comment">//4、使用网络字节输入流InputStream对象中的方法read，读取客户端发送的数据。</span></span><br><span class="line">		<span class="keyword">byte</span>[] bytes = <span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">1024</span>];</span><br><span class="line">		<span class="keyword">int</span> len = is.read(bytes);</span><br><span class="line">		System.out.println(<span class="keyword">new</span> String(bytes,<span class="number">0</span>,len));</span><br><span class="line">		<span class="comment">//5、使用Socket对象中的方法getOutputStream()获取网络字节输出流OutputStream对象。</span></span><br><span class="line">		OutputStream os = socket.getOutputStream();</span><br><span class="line">		<span class="comment">//6、使用网络字节输出流OutputStream对象中的方法write，给客户端回写数据。</span></span><br><span class="line">		os.write(<span class="string">"服务器：皇图霸业谈笑中，不胜人生一场醉"</span>.getBytes());</span><br><span class="line">		<span class="comment">//7、释放资源（Socket，ServerSocket)</span></span><br><span class="line">		socket.close();</span><br><span class="line">		server.close();</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 ]]></content>
+      <categories>
+        <category>java web</category>
+      </categories>
       <tags>
-        <tag>java</tag>
-        <tag>网络编程</tag>
+        <tag>网络编程，java</tag>
       </tags>
   </entry>
   <entry>
@@ -642,8 +674,22 @@
 <p>牛顿：“我脚下这是一平方米的方块，我站在上面就是牛顿/平方米，所以你抓住的不是牛顿，你抓住的是帕斯卡。”</p>
 </blockquote>
 ]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
       <tags>
         <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>文件上传</title>
+    <url>/2020/05/13/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>java web</category>
+      </categories>
+      <tags>
+        <tag>网络编程， Java</tag>
       </tags>
   </entry>
 </search>
