@@ -31,6 +31,80 @@
       </tags>
   </entry>
   <entry>
+    <title>1.6.2）计算机网络体系结构分层的必要性</title>
+    <url>/2020/05/07/1-6-2%EF%BC%89%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E5%88%86%E5%B1%82%E7%9A%84%E5%BF%85%E8%A6%81%E6%80%A7/</url>
+    <content><![CDATA[<h2 id="计算机网络体系结构分层的必要性"><a href="#计算机网络体系结构分层的必要性" class="headerlink" title="计算机网络体系结构分层的必要性"></a>计算机网络体系结构分层的必要性</h2><h3 id="实现计算机网络所要解决的各种主要问题："><a href="#实现计算机网络所要解决的各种主要问题：" class="headerlink" title="实现计算机网络所要解决的各种主要问题："></a>实现计算机网络所要解决的各种主要问题：</h3><p><strong>原理体系结构</strong></p>
+<p><strong>5、应用层</strong> :</p>
+<ul>
+<li><p>通过应用进程间的交互来完成特定的网络应用</p>
+ <a id="more"></a>
+
+<p>（支持万维网应用的HTTP协议</p>
+<p>​    支持电子邮件的SMTP协议</p>
+<p>​    支持文件传输的FTP协议 ，，，）</p>
+</li>
+</ul>
+<p><strong>4、运输层</strong>（进程之间基于网络的通信）:</p>
+<ul>
+<li><p>如何解决进程之间基于网络的通信问题</p>
+</li>
+<li><p>出现传输错误时如何处理 ，，，</p>
+</li>
+</ul>
+<p><strong>3、网络层</strong>（分组在多个网络间（路由）进行传输）:</p>
+<ul>
+<li><p>如何标识各网络以及网络中各主机（网络和主机共同编址的问题，例如IP地址）</p>
+</li>
+<li><p>路由器如何转发分组，如何进行路由选择 ，，，</p>
+</li>
+</ul>
+<p><strong>2、数据链路层</strong>（分组在一个网络上传输）:</p>
+<ul>
+<li><p>如何表示网络中的各主机（主机编址问题，例如MAC地址）</p>
+</li>
+<li><p>如何从信号所表示的一连串比特流中区分出地址和数据</p>
+</li>
+<li><p>如何协调各主机征用总线 ，，，</p>
+</li>
+</ul>
+<p><strong>1、物理层</strong> : </p>
+<ul>
+<li><p>采用怎样的传输媒体（介质）</p>
+</li>
+<li><p>采用怎样的物理接口</p>
+</li>
+<li><p>使用怎样的信号表示比特0和1 ，，，</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>计算机网络</category>
+      </categories>
+      <tags>
+        <tag>概述</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>1.6.3）计算机网络体系结构分层思想举例</title>
+    <url>/2020/05/07/1-6-3%EF%BC%89%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E5%88%86%E5%B1%82%E6%80%9D%E6%83%B3%E4%B8%BE%E4%BE%8B/</url>
+    <content><![CDATA[<h2 id="计算机网络体系结构分层思想举例"><a href="#计算机网络体系结构分层思想举例" class="headerlink" title="计算机网络体系结构分层思想举例"></a>计算机网络体系结构分层思想举例</h2><p>应用层 ——》 HTTP报文</p>
+<p>运输层 ——》 HTTP TCP （添加TCP首部</p>
+<a id="more"></a>
+
+<p>网络层 ——》 HTTP TCP IP （添加IP首部</p>
+<p>数据链路层 ——》 ETH HTTP TCP IP ETH （添加首部和尾部，使之成为帧</p>
+<p>物理层 ——》 将帧看作比特流，并添加前导码</p>
+<p>物理层将添加有前导码的比特流变换成相应的信号发送到传输媒体，信号通过传输媒体到达路由器</p>
+<p><img src="/2020/05/07/1-6-3%EF%BC%89%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E5%88%86%E5%B1%82%E6%80%9D%E6%83%B3%E4%B8%BE%E4%BE%8B/1.6.3.png" alt="分层思想"></p>
+]]></content>
+      <categories>
+        <category>计算机网络</category>
+      </categories>
+      <tags>
+        <tag>概述</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>1.6.4）计算机网络体系结构中的专用术语</title>
     <url>/2020/05/07/1-6-4%EF%BC%89%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E4%B8%AD%E7%9A%84%E4%B8%93%E7%94%A8%E6%9C%AF%E8%AF%AD/</url>
     <content><![CDATA[<h2 id="计算机网络体系结构中的专用术语"><a href="#计算机网络体系结构中的专用术语" class="headerlink" title="计算机网络体系结构中的专用术语"></a>计算机网络体系结构中的专用术语</h2><ul>
@@ -112,80 +186,6 @@
       </tags>
   </entry>
   <entry>
-    <title>1.6.2）计算机网络体系结构分层的必要性</title>
-    <url>/2020/05/07/1-6-2%EF%BC%89%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E5%88%86%E5%B1%82%E7%9A%84%E5%BF%85%E8%A6%81%E6%80%A7/</url>
-    <content><![CDATA[<h2 id="计算机网络体系结构分层的必要性"><a href="#计算机网络体系结构分层的必要性" class="headerlink" title="计算机网络体系结构分层的必要性"></a>计算机网络体系结构分层的必要性</h2><h3 id="实现计算机网络所要解决的各种主要问题："><a href="#实现计算机网络所要解决的各种主要问题：" class="headerlink" title="实现计算机网络所要解决的各种主要问题："></a>实现计算机网络所要解决的各种主要问题：</h3><p><strong>原理体系结构</strong></p>
-<p><strong>5、应用层</strong> :</p>
-<ul>
-<li><p>通过应用进程间的交互来完成特定的网络应用</p>
- <a id="more"></a>
-
-<p>（支持万维网应用的HTTP协议</p>
-<p>​    支持电子邮件的SMTP协议</p>
-<p>​    支持文件传输的FTP协议 ，，，）</p>
-</li>
-</ul>
-<p><strong>4、运输层</strong>（进程之间基于网络的通信）:</p>
-<ul>
-<li><p>如何解决进程之间基于网络的通信问题</p>
-</li>
-<li><p>出现传输错误时如何处理 ，，，</p>
-</li>
-</ul>
-<p><strong>3、网络层</strong>（分组在多个网络间（路由）进行传输）:</p>
-<ul>
-<li><p>如何标识各网络以及网络中各主机（网络和主机共同编址的问题，例如IP地址）</p>
-</li>
-<li><p>路由器如何转发分组，如何进行路由选择 ，，，</p>
-</li>
-</ul>
-<p><strong>2、数据链路层</strong>（分组在一个网络上传输）:</p>
-<ul>
-<li><p>如何表示网络中的各主机（主机编址问题，例如MAC地址）</p>
-</li>
-<li><p>如何从信号所表示的一连串比特流中区分出地址和数据</p>
-</li>
-<li><p>如何协调各主机征用总线 ，，，</p>
-</li>
-</ul>
-<p><strong>1、物理层</strong> : </p>
-<ul>
-<li><p>采用怎样的传输媒体（介质）</p>
-</li>
-<li><p>采用怎样的物理接口</p>
-</li>
-<li><p>使用怎样的信号表示比特0和1 ，，，</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>计算机网络</category>
-      </categories>
-      <tags>
-        <tag>概述</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>1.6.3）计算机网络体系结构分层思想举例</title>
-    <url>/2020/05/07/1-6-3%EF%BC%89%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E5%88%86%E5%B1%82%E6%80%9D%E6%83%B3%E4%B8%BE%E4%BE%8B/</url>
-    <content><![CDATA[<h2 id="计算机网络体系结构分层思想举例"><a href="#计算机网络体系结构分层思想举例" class="headerlink" title="计算机网络体系结构分层思想举例"></a>计算机网络体系结构分层思想举例</h2><p>应用层 ——》 HTTP报文</p>
-<p>运输层 ——》 HTTP TCP （添加TCP首部</p>
-<a id="more"></a>
-
-<p>网络层 ——》 HTTP TCP IP （添加IP首部</p>
-<p>数据链路层 ——》 ETH HTTP TCP IP ETH （添加首部和尾部，使之成为帧</p>
-<p>物理层 ——》 将帧看作比特流，并添加前导码</p>
-<p>物理层将添加有前导码的比特流变换成相应的信号发送到传输媒体，信号通过传输媒体到达路由器</p>
-<p><img src="/2020/05/07/1-6-3%EF%BC%89%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E5%88%86%E5%B1%82%E6%80%9D%E6%83%B3%E4%B8%BE%E4%BE%8B/1.6.3.png" alt="分层思想"></p>
-]]></content>
-      <categories>
-        <category>计算机网络</category>
-      </categories>
-      <tags>
-        <tag>概述</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2.4）编码与调制</title>
     <url>/2020/05/07/2-4%EF%BC%89%E7%BC%96%E7%A0%81%E4%B8%8E%E8%B0%83%E5%88%B6/</url>
     <content><![CDATA[<h2 id="编码与调制"><a href="#编码与调制" class="headerlink" title="编码与调制"></a>编码与调制</h2><p><strong>编码</strong></p>
@@ -249,6 +249,39 @@
       </tags>
   </entry>
   <entry>
+    <title>2.5）信道极限容量</title>
+    <url>/2020/05/07/2-5%EF%BC%89%E4%BF%A1%E9%81%93%E7%9A%84%E6%9E%81%E9%99%90%E5%AE%B9%E9%87%8F/</url>
+    <content><![CDATA[<h2 id="信道极限容量"><a href="#信道极限容量" class="headerlink" title="信道极限容量"></a>信道极限容量</h2><p><strong>1、造成信号失真的因素</strong>：</p>
+<ul>
+<li><p>码元传输速率</p>
+</li>
+<li><p>信号传输距离</p>
+</li>
+<li><p>噪声干扰</p>
+<a id="more"></a>
+</li>
+<li><p>传输媒体质量</p>
+</li>
+</ul>
+<p><strong>2、码元传输速率</strong>又叫波特率、调制速率、波形速率或符号速率。</p>
+<p><strong>3、当1个码元只携带1比特信息时，波特率（码元/秒）与比特率（比特/秒）在数值上是相等的。</strong></p>
+<p><strong>4、当1个码元携带n比特信息量时，则波特率转化成比特率时，数值要乘以n。</strong></p>
+<p><strong>5、</strong><img src="/2020/05/07/2-5%EF%BC%89%E4%BF%A1%E9%81%93%E7%9A%84%E6%9E%81%E9%99%90%E5%AE%B9%E9%87%8F/2.5.1.png" alt="。。。"></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;c是信道的极限传输速率，单位为b/s；</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;W为信道带宽，单位为Hz；</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;s是信道内所传输信号的平均功率；</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;N是信道内的高斯噪声功率；</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;S/N是信噪比，使用分贝（dB）作为度量单位</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;信噪比（dB）=<img src="/2020/05/07/2-5%EF%BC%89%E4%BF%A1%E9%81%93%E7%9A%84%E6%9E%81%E9%99%90%E5%AE%B9%E9%87%8F/2.5.2.png" alt="。。。">（dB）</p>
+]]></content>
+      <categories>
+        <category>计算机网络</category>
+      </categories>
+      <tags>
+        <tag>物理层</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>3.1）数据链路层概述</title>
     <url>/2020/05/07/3-1%EF%BC%89%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82%E6%A6%82%E8%BF%B0/</url>
     <content><![CDATA[<h2 id="数据链路层概述"><a href="#数据链路层概述" class="headerlink" title="数据链路层概述"></a>数据链路层概述</h2><ul>
@@ -289,39 +322,6 @@
       </categories>
       <tags>
         <tag>数据链路层</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2.5）信道极限容量</title>
-    <url>/2020/05/07/2-5%EF%BC%89%E4%BF%A1%E9%81%93%E7%9A%84%E6%9E%81%E9%99%90%E5%AE%B9%E9%87%8F/</url>
-    <content><![CDATA[<h2 id="信道极限容量"><a href="#信道极限容量" class="headerlink" title="信道极限容量"></a>信道极限容量</h2><p><strong>1、造成信号失真的因素</strong>：</p>
-<ul>
-<li><p>码元传输速率</p>
-</li>
-<li><p>信号传输距离</p>
-</li>
-<li><p>噪声干扰</p>
-<a id="more"></a>
-</li>
-<li><p>传输媒体质量</p>
-</li>
-</ul>
-<p><strong>2、码元传输速率</strong>又叫波特率、调制速率、波形速率或符号速率。</p>
-<p><strong>3、当1个码元只携带1比特信息时，波特率（码元/秒）与比特率（比特/秒）在数值上是相等的。</strong></p>
-<p><strong>4、当1个码元携带n比特信息量时，则波特率转化成比特率时，数值要乘以n。</strong></p>
-<p><strong>5、</strong><img src="/2020/05/07/2-5%EF%BC%89%E4%BF%A1%E9%81%93%E7%9A%84%E6%9E%81%E9%99%90%E5%AE%B9%E9%87%8F/2.5.1.png" alt="。。。"></p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;c是信道的极限传输速率，单位为b/s；</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;W为信道带宽，单位为Hz；</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;s是信道内所传输信号的平均功率；</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;N是信道内的高斯噪声功率；</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;S/N是信噪比，使用分贝（dB）作为度量单位</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;信噪比（dB）=<img src="/2020/05/07/2-5%EF%BC%89%E4%BF%A1%E9%81%93%E7%9A%84%E6%9E%81%E9%99%90%E5%AE%B9%E9%87%8F/2.5.2.png" alt="。。。">（dB）</p>
-]]></content>
-      <categories>
-        <category>计算机网络</category>
-      </categories>
-      <tags>
-        <tag>物理层</tag>
       </tags>
   </entry>
   <entry>
@@ -540,17 +540,6 @@
       </tags>
   </entry>
   <entry>
-    <title>文件上传</title>
-    <url>/2020/05/13/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>java</category>
-      </categories>
-      <tags>
-        <tag>网络编程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>3.6）媒体接入与随机接入</title>
     <url>/2020/05/13/3-6%EF%BC%89%E5%AA%92%E4%BD%93%E6%8E%A5%E5%85%A5%E4%B8%8E%E9%9A%8F%E6%9C%BA%E6%8E%A5%E5%85%A5/</url>
     <content><![CDATA[<h2 id="3-6-1-媒体介入控制的基本概念"><a href="#3-6-1-媒体介入控制的基本概念" class="headerlink" title="3.6.1 媒体介入控制的基本概念"></a>3.6.1 媒体介入控制的基本概念</h2><p> <strong>共享信道要着重考虑的一个问题就是如何协调多个发送和接收站点对一个共享传输媒体的占用，即<em>媒体接入控制MAC</em>（Medium Access Control).</strong></p>
@@ -667,6 +656,17 @@
 ]]></content>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>文件上传</title>
+    <url>/2020/05/13/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>网络编程</tag>
       </tags>
   </entry>
   <entry>
