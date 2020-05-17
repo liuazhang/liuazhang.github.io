@@ -1,6 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>1.6.1）常见的计算机网络体系结构</title>
+    <url>/2020/05/07/1-6-1%EF%BC%89%E5%B8%B8%E8%A7%81%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<h2 id="常见的计算机网络体系结构"><a href="#常见的计算机网络体系结构" class="headerlink" title="常见的计算机网络体系结构"></a>常见的计算机网络体系结构</h2><h3 id="1-1-OSI体系结构"><a href="#1-1-OSI体系结构" class="headerlink" title="1.1 OSI体系结构"></a>1.1 OSI体系结构</h3><p>​    7，应用层</p>
+<a id="more"></a>
+
+<p>​    6，表示层 </p>
+<p>​    5，会话层</p>
+<p>​    4，运输层</p>
+<p>​    3，网络层</p>
+<p>​    2，数据链路层</p>
+<p>​    1，物理层</p>
+<h3 id="1-2-TCP-IP体系结构"><a href="#1-2-TCP-IP体系结构" class="headerlink" title="1.2 TCP/IP体系结构"></a>1.2 TCP/IP体系结构</h3><p>​    4，应用层 【HTTP SMTP】 【DNS RTP】</p>
+<p>​    3，运输层  TCP（可靠传输） UDP（不可靠传输）</p>
+<p>​    2，网际层    IP</p>
+<p>​    1，网络接口层  网络接口 </p>
+<p>​    （路由器只包含网际层、网络接口层）</p>
+<h3 id="1-3原理体系结构"><a href="#1-3原理体系结构" class="headerlink" title="1.3原理体系结构"></a>1.3原理体系结构</h3><p>​    5，应用层</p>
+<p>​    4，运输层</p>
+<p>​    3，网络层   </p>
+<p>​    2，数据链路层    </p>
+<p>​    1，物理层   </p>
+]]></content>
+      <categories>
+        <category>计算机网络</category>
+      </categories>
+      <tags>
+        <tag>概述</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>1.6.3）计算机网络体系结构分层思想举例</title>
+    <url>/2020/05/07/1-6-3%EF%BC%89%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E5%88%86%E5%B1%82%E6%80%9D%E6%83%B3%E4%B8%BE%E4%BE%8B/</url>
+    <content><![CDATA[<h2 id="计算机网络体系结构分层思想举例"><a href="#计算机网络体系结构分层思想举例" class="headerlink" title="计算机网络体系结构分层思想举例"></a>计算机网络体系结构分层思想举例</h2><p>应用层 ——》 HTTP报文</p>
+<p>运输层 ——》 HTTP TCP （添加TCP首部</p>
+<a id="more"></a>
+
+<p>网络层 ——》 HTTP TCP IP （添加IP首部</p>
+<p>数据链路层 ——》 ETH HTTP TCP IP ETH （添加首部和尾部，使之成为帧</p>
+<p>物理层 ——》 将帧看作比特流，并添加前导码</p>
+<p>物理层将添加有前导码的比特流变换成相应的信号发送到传输媒体，信号通过传输媒体到达路由器</p>
+<p><img src="/2020/05/07/1-6-3%EF%BC%89%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E5%88%86%E5%B1%82%E6%80%9D%E6%83%B3%E4%B8%BE%E4%BE%8B/1.6.3.png" alt="分层思想"></p>
+]]></content>
+      <categories>
+        <category>计算机网络</category>
+      </categories>
+      <tags>
+        <tag>概述</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>1.6.2）计算机网络体系结构分层的必要性</title>
+    <url>/2020/05/07/1-6-2%EF%BC%89%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E5%88%86%E5%B1%82%E7%9A%84%E5%BF%85%E8%A6%81%E6%80%A7/</url>
+    <content><![CDATA[<h2 id="计算机网络体系结构分层的必要性"><a href="#计算机网络体系结构分层的必要性" class="headerlink" title="计算机网络体系结构分层的必要性"></a>计算机网络体系结构分层的必要性</h2><h3 id="实现计算机网络所要解决的各种主要问题："><a href="#实现计算机网络所要解决的各种主要问题：" class="headerlink" title="实现计算机网络所要解决的各种主要问题："></a>实现计算机网络所要解决的各种主要问题：</h3><p><strong>原理体系结构</strong></p>
+<p><strong>5、应用层</strong> :</p>
+<ul>
+<li><p>通过应用进程间的交互来完成特定的网络应用</p>
+ <a id="more"></a>
+
+<p>（支持万维网应用的HTTP协议</p>
+<p>​    支持电子邮件的SMTP协议</p>
+<p>​    支持文件传输的FTP协议 ，，，）</p>
+</li>
+</ul>
+<p><strong>4、运输层</strong>（进程之间基于网络的通信）:</p>
+<ul>
+<li><p>如何解决进程之间基于网络的通信问题</p>
+</li>
+<li><p>出现传输错误时如何处理 ，，，</p>
+</li>
+</ul>
+<p><strong>3、网络层</strong>（分组在多个网络间（路由）进行传输）:</p>
+<ul>
+<li><p>如何标识各网络以及网络中各主机（网络和主机共同编址的问题，例如IP地址）</p>
+</li>
+<li><p>路由器如何转发分组，如何进行路由选择 ，，，</p>
+</li>
+</ul>
+<p><strong>2、数据链路层</strong>（分组在一个网络上传输）:</p>
+<ul>
+<li><p>如何表示网络中的各主机（主机编址问题，例如MAC地址）</p>
+</li>
+<li><p>如何从信号所表示的一连串比特流中区分出地址和数据</p>
+</li>
+<li><p>如何协调各主机征用总线 ，，，</p>
+</li>
+</ul>
+<p><strong>1、物理层</strong> : </p>
+<ul>
+<li><p>采用怎样的传输媒体（介质）</p>
+</li>
+<li><p>采用怎样的物理接口</p>
+</li>
+<li><p>使用怎样的信号表示比特0和1 ，，，</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>计算机网络</category>
+      </categories>
+      <tags>
+        <tag>概述</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>1.6.4）计算机网络体系结构中的专用术语</title>
     <url>/2020/05/07/1-6-4%EF%BC%89%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E4%B8%AD%E7%9A%84%E4%B8%93%E7%94%A8%E6%9C%AF%E8%AF%AD/</url>
     <content><![CDATA[<h2 id="计算机网络体系结构中的专用术语"><a href="#计算机网络体系结构中的专用术语" class="headerlink" title="计算机网络体系结构中的专用术语"></a>计算机网络体系结构中的专用术语</h2><ul>
@@ -73,110 +177,6 @@
 </li>
 </ul>
 <p><img src="/2020/05/07/1-6-4%EF%BC%89%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E4%B8%AD%E7%9A%84%E4%B8%93%E7%94%A8%E6%9C%AF%E8%AF%AD/1.6.4.png" alt="。。。"></p>
-]]></content>
-      <categories>
-        <category>计算机网络</category>
-      </categories>
-      <tags>
-        <tag>概述</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>1.6.2）计算机网络体系结构分层的必要性</title>
-    <url>/2020/05/07/1-6-2%EF%BC%89%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E5%88%86%E5%B1%82%E7%9A%84%E5%BF%85%E8%A6%81%E6%80%A7/</url>
-    <content><![CDATA[<h2 id="计算机网络体系结构分层的必要性"><a href="#计算机网络体系结构分层的必要性" class="headerlink" title="计算机网络体系结构分层的必要性"></a>计算机网络体系结构分层的必要性</h2><h3 id="实现计算机网络所要解决的各种主要问题："><a href="#实现计算机网络所要解决的各种主要问题：" class="headerlink" title="实现计算机网络所要解决的各种主要问题："></a>实现计算机网络所要解决的各种主要问题：</h3><p><strong>原理体系结构</strong></p>
-<p><strong>5、应用层</strong> :</p>
-<ul>
-<li><p>通过应用进程间的交互来完成特定的网络应用</p>
- <a id="more"></a>
-
-<p>（支持万维网应用的HTTP协议</p>
-<p>​    支持电子邮件的SMTP协议</p>
-<p>​    支持文件传输的FTP协议 ，，，）</p>
-</li>
-</ul>
-<p><strong>4、运输层</strong>（进程之间基于网络的通信）:</p>
-<ul>
-<li><p>如何解决进程之间基于网络的通信问题</p>
-</li>
-<li><p>出现传输错误时如何处理 ，，，</p>
-</li>
-</ul>
-<p><strong>3、网络层</strong>（分组在多个网络间（路由）进行传输）:</p>
-<ul>
-<li><p>如何标识各网络以及网络中各主机（网络和主机共同编址的问题，例如IP地址）</p>
-</li>
-<li><p>路由器如何转发分组，如何进行路由选择 ，，，</p>
-</li>
-</ul>
-<p><strong>2、数据链路层</strong>（分组在一个网络上传输）:</p>
-<ul>
-<li><p>如何表示网络中的各主机（主机编址问题，例如MAC地址）</p>
-</li>
-<li><p>如何从信号所表示的一连串比特流中区分出地址和数据</p>
-</li>
-<li><p>如何协调各主机征用总线 ，，，</p>
-</li>
-</ul>
-<p><strong>1、物理层</strong> : </p>
-<ul>
-<li><p>采用怎样的传输媒体（介质）</p>
-</li>
-<li><p>采用怎样的物理接口</p>
-</li>
-<li><p>使用怎样的信号表示比特0和1 ，，，</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>计算机网络</category>
-      </categories>
-      <tags>
-        <tag>概述</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>1.6.3）计算机网络体系结构分层思想举例</title>
-    <url>/2020/05/07/1-6-3%EF%BC%89%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E5%88%86%E5%B1%82%E6%80%9D%E6%83%B3%E4%B8%BE%E4%BE%8B/</url>
-    <content><![CDATA[<h2 id="计算机网络体系结构分层思想举例"><a href="#计算机网络体系结构分层思想举例" class="headerlink" title="计算机网络体系结构分层思想举例"></a>计算机网络体系结构分层思想举例</h2><p>应用层 ——》 HTTP报文</p>
-<p>运输层 ——》 HTTP TCP （添加TCP首部</p>
-<a id="more"></a>
-
-<p>网络层 ——》 HTTP TCP IP （添加IP首部</p>
-<p>数据链路层 ——》 ETH HTTP TCP IP ETH （添加首部和尾部，使之成为帧</p>
-<p>物理层 ——》 将帧看作比特流，并添加前导码</p>
-<p>物理层将添加有前导码的比特流变换成相应的信号发送到传输媒体，信号通过传输媒体到达路由器</p>
-<p><img src="/2020/05/07/1-6-3%EF%BC%89%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E5%88%86%E5%B1%82%E6%80%9D%E6%83%B3%E4%B8%BE%E4%BE%8B/1.6.3.png" alt="分层思想"></p>
-]]></content>
-      <categories>
-        <category>计算机网络</category>
-      </categories>
-      <tags>
-        <tag>概述</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>1.6.1）常见的计算机网络体系结构</title>
-    <url>/2020/05/07/1-6-1%EF%BC%89%E5%B8%B8%E8%A7%81%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/</url>
-    <content><![CDATA[<h2 id="常见的计算机网络体系结构"><a href="#常见的计算机网络体系结构" class="headerlink" title="常见的计算机网络体系结构"></a>常见的计算机网络体系结构</h2><h3 id="1-1-OSI体系结构"><a href="#1-1-OSI体系结构" class="headerlink" title="1.1 OSI体系结构"></a>1.1 OSI体系结构</h3><p>​    7，应用层</p>
-<a id="more"></a>
-
-<p>​    6，表示层 </p>
-<p>​    5，会话层</p>
-<p>​    4，运输层</p>
-<p>​    3，网络层</p>
-<p>​    2，数据链路层</p>
-<p>​    1，物理层</p>
-<h3 id="1-2-TCP-IP体系结构"><a href="#1-2-TCP-IP体系结构" class="headerlink" title="1.2 TCP/IP体系结构"></a>1.2 TCP/IP体系结构</h3><p>​    4，应用层 【HTTP SMTP】 【DNS RTP】</p>
-<p>​    3，运输层  TCP（可靠传输） UDP（不可靠传输）</p>
-<p>​    2，网际层    IP</p>
-<p>​    1，网络接口层  网络接口 </p>
-<p>​    （路由器只包含网际层、网络接口层）</p>
-<h3 id="1-3原理体系结构"><a href="#1-3原理体系结构" class="headerlink" title="1.3原理体系结构"></a>1.3原理体系结构</h3><p>​    5，应用层</p>
-<p>​    4，运输层</p>
-<p>​    3，网络层   </p>
-<p>​    2，数据链路层    </p>
-<p>​    1，物理层   </p>
 ]]></content>
       <categories>
         <category>计算机网络</category>
@@ -359,73 +359,6 @@
       </tags>
   </entry>
   <entry>
-    <title>3.3）差错检测</title>
-    <url>/2020/05/08/3-3%EF%BC%89%E5%B7%AE%E9%94%99%E6%A3%80%E6%B5%8B/</url>
-    <content><![CDATA[<h2 id="差错检测"><a href="#差错检测" class="headerlink" title="差错检测"></a>差错检测</h2><p>1、实际的通信链路都不是理想的，比特在传输过程中可能会产生差错：1可能会变成0，而0可能会变成1.这称为<strong>比特差错</strong></p>
-<p>2、在一段时间内，传输错误的比特占所传输比特总数的比特率称为<strong>误码率BER</strong>（Bit Error Rate）。</p>
-<p>3、使用<strong>差错检测码</strong>来检测数据在传输过程中是否产生了比特差错，使数据链路层所要解决的重要问题之一。</p>
-<br>
-
-<h3 id="奇偶校验"><a href="#奇偶校验" class="headerlink" title="奇偶校验"></a>奇偶校验</h3><a id="more"></a>
-
-<blockquote>
-<p>&emsp;在代发送的数据后面<strong>添加1位奇偶校验位</strong>，使整个数据（包括所添加的校验位在内）中<strong>“1”的个数</strong>为奇数（奇校验）或偶数（偶校验）。</p>
-</blockquote>
-<p><strong>1位误码可以检测出错误，无法应对2位误码</strong></p>
-<br>
-
-<h3 id="循环冗余校验CRC（Cyclic-Redundancy-Check）"><a href="#循环冗余校验CRC（Cyclic-Redundancy-Check）" class="headerlink" title="循环冗余校验CRC（Cyclic Redundancy Check）"></a>循环冗余校验CRC（Cyclic Redundancy Check）</h3><blockquote>
-<p>&emsp;收发双方约定好一个<strong>生成多项式</strong>G（x）；</p>
-<p>&emsp;发送方基于待发送的数据和生成多项式计算出差错检测码（<strong>冗余码</strong>），将其添加到待传输数据的后面一起传输；</p>
-<p>&emsp;接收方通过生成多项式来计算收到的数据是否产生了误码；</p>
-</blockquote>
-<br>
-
-<h3 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h3><p><img src="/2020/05/08/3-3%EF%BC%89%E5%B7%AE%E9%94%99%E6%A3%80%E6%B5%8B/1.jpg" alt="..."></p>
-<hr>
-<p><img src="/2020/05/08/3-3%EF%BC%89%E5%B7%AE%E9%94%99%E6%A3%80%E6%B5%8B/2.jpg" alt="..."></p>
-<br>
-
-<h3 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h3><blockquote>
-<p>1、<strong>检错码</strong>只能检测出帧在传输过程中出现了差错，但并不能定位错误，因此<strong>无法纠正错误</strong>。</p>
-<p>2、要想纠正传输中的差错，可以使用冗余信息更多的<strong>纠错码</strong>进行<strong>前向纠错</strong>。但纠错码的开销较大，在<strong>计算机网络中较少使用</strong>。</p>
-<p>3、循环冗余校验<strong>CRC</strong>有很好的检错能力（<strong>漏检率非常低</strong>），虽然计算比较复杂，但非常<strong>易于用硬件实施</strong>，因此被<strong>广泛用于数据链路层</strong>。</p>
-<p>4、在计算机网络中通常采用<strong>检错重传方式来纠正传输中的差错</strong>，<strong>或者仅仅是丢弃检测到差错的帧</strong>，这取决于数据链路层向其上层提供的是可靠传输服务还是不可靠传输服务。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>计算机网络</category>
-      </categories>
-      <tags>
-        <tag>数据链路层</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>3.5）点对点协议PPP</title>
-    <url>/2020/05/13/3-5%EF%BC%89%E7%82%B9%E5%AF%B9%E7%82%B9%E5%8D%8F%E8%AE%AEPPP/</url>
-    <content><![CDATA[<h2 id="点对点协议PPP"><a href="#点对点协议PPP" class="headerlink" title="点对点协议PPP"></a>点对点协议PPP</h2><p><strong>PPP协议的标准文档[RFC1661,RFC1662]。</strong></p>
-<p><strong>PPP协议为在点对点链路传输各种协议数据报提供了一个标准方法，主要由以下三部分构成：</strong></p>
-<p>1、对各种协议数据报的封装方法（ 封装成帧）</p>
-<p>2、链路控制协议LCP （ 用于建立，配置以及测试数据链路的连接        <a id="more"></a></p>
-<p>3、一套网络控制协议NCPs （ 其中的每一个协议支持不同的网络层协议</p>
-<br>
-
-<p><strong>PPP帧的透明传输</strong></p>
-<p>1、面向字节的异步链路使用字节填充法（插入转义字符</p>
-<p>2、面向比特的同步链路使用比特填充法（零比特填充</p>
-<br>
-
-<p><strong>PPP协议的工作状态</strong></p>
-<p><img src="/2020/05/13/3-5%EF%BC%89%E7%82%B9%E5%AF%B9%E7%82%B9%E5%8D%8F%E8%AE%AEPPP/1.jpg" alt="..."></p>
-]]></content>
-      <categories>
-        <category>计算机网络</category>
-      </categories>
-      <tags>
-        <tag>数据链路层</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>3.4）可靠传输</title>
     <url>/2020/05/09/3-4%EF%BC%89%E5%8F%AF%E9%9D%A0%E4%BC%A0%E8%BE%93/</url>
     <content><![CDATA[<h2 id="1、可靠传输的基本概念"><a href="#1、可靠传输的基本概念" class="headerlink" title="1、可靠传输的基本概念"></a>1、可靠传输的基本概念</h2><p>&emsp;使用<strong>差错检测技术</strong>（例如循环冗余校验CRC），接收方的数据链路层就可检测出帧在传输过程中是否产生了<strong>误码</strong>（比特错误）。   </p>
@@ -540,6 +473,131 @@
       </tags>
   </entry>
   <entry>
+    <title>3.3）差错检测</title>
+    <url>/2020/05/08/3-3%EF%BC%89%E5%B7%AE%E9%94%99%E6%A3%80%E6%B5%8B/</url>
+    <content><![CDATA[<h2 id="差错检测"><a href="#差错检测" class="headerlink" title="差错检测"></a>差错检测</h2><p>1、实际的通信链路都不是理想的，比特在传输过程中可能会产生差错：1可能会变成0，而0可能会变成1.这称为<strong>比特差错</strong></p>
+<p>2、在一段时间内，传输错误的比特占所传输比特总数的比特率称为<strong>误码率BER</strong>（Bit Error Rate）。</p>
+<p>3、使用<strong>差错检测码</strong>来检测数据在传输过程中是否产生了比特差错，使数据链路层所要解决的重要问题之一。</p>
+<br>
+
+<h3 id="奇偶校验"><a href="#奇偶校验" class="headerlink" title="奇偶校验"></a>奇偶校验</h3><a id="more"></a>
+
+<blockquote>
+<p>&emsp;在代发送的数据后面<strong>添加1位奇偶校验位</strong>，使整个数据（包括所添加的校验位在内）中<strong>“1”的个数</strong>为奇数（奇校验）或偶数（偶校验）。</p>
+</blockquote>
+<p><strong>1位误码可以检测出错误，无法应对2位误码</strong></p>
+<br>
+
+<h3 id="循环冗余校验CRC（Cyclic-Redundancy-Check）"><a href="#循环冗余校验CRC（Cyclic-Redundancy-Check）" class="headerlink" title="循环冗余校验CRC（Cyclic Redundancy Check）"></a>循环冗余校验CRC（Cyclic Redundancy Check）</h3><blockquote>
+<p>&emsp;收发双方约定好一个<strong>生成多项式</strong>G（x）；</p>
+<p>&emsp;发送方基于待发送的数据和生成多项式计算出差错检测码（<strong>冗余码</strong>），将其添加到待传输数据的后面一起传输；</p>
+<p>&emsp;接收方通过生成多项式来计算收到的数据是否产生了误码；</p>
+</blockquote>
+<br>
+
+<h3 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h3><p><img src="/2020/05/08/3-3%EF%BC%89%E5%B7%AE%E9%94%99%E6%A3%80%E6%B5%8B/1.jpg" alt="..."></p>
+<hr>
+<p><img src="/2020/05/08/3-3%EF%BC%89%E5%B7%AE%E9%94%99%E6%A3%80%E6%B5%8B/2.jpg" alt="..."></p>
+<br>
+
+<h3 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h3><blockquote>
+<p>1、<strong>检错码</strong>只能检测出帧在传输过程中出现了差错，但并不能定位错误，因此<strong>无法纠正错误</strong>。</p>
+<p>2、要想纠正传输中的差错，可以使用冗余信息更多的<strong>纠错码</strong>进行<strong>前向纠错</strong>。但纠错码的开销较大，在<strong>计算机网络中较少使用</strong>。</p>
+<p>3、循环冗余校验<strong>CRC</strong>有很好的检错能力（<strong>漏检率非常低</strong>），虽然计算比较复杂，但非常<strong>易于用硬件实施</strong>，因此被<strong>广泛用于数据链路层</strong>。</p>
+<p>4、在计算机网络中通常采用<strong>检错重传方式来纠正传输中的差错</strong>，<strong>或者仅仅是丢弃检测到差错的帧</strong>，这取决于数据链路层向其上层提供的是可靠传输服务还是不可靠传输服务。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>计算机网络</category>
+      </categories>
+      <tags>
+        <tag>数据链路层</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>3.5）点对点协议PPP</title>
+    <url>/2020/05/13/3-5%EF%BC%89%E7%82%B9%E5%AF%B9%E7%82%B9%E5%8D%8F%E8%AE%AEPPP/</url>
+    <content><![CDATA[<h2 id="点对点协议PPP"><a href="#点对点协议PPP" class="headerlink" title="点对点协议PPP"></a>点对点协议PPP</h2><p><strong>PPP协议的标准文档[RFC1661,RFC1662]。</strong></p>
+<p><strong>PPP协议为在点对点链路传输各种协议数据报提供了一个标准方法，主要由以下三部分构成：</strong></p>
+<p>1、对各种协议数据报的封装方法（ 封装成帧）</p>
+<p>2、链路控制协议LCP （ 用于建立，配置以及测试数据链路的连接        <a id="more"></a></p>
+<p>3、一套网络控制协议NCPs （ 其中的每一个协议支持不同的网络层协议</p>
+<br>
+
+<p><strong>PPP帧的透明传输</strong></p>
+<p>1、面向字节的异步链路使用字节填充法（插入转义字符</p>
+<p>2、面向比特的同步链路使用比特填充法（零比特填充</p>
+<br>
+
+<p><strong>PPP协议的工作状态</strong></p>
+<p><img src="/2020/05/13/3-5%EF%BC%89%E7%82%B9%E5%AF%B9%E7%82%B9%E5%8D%8F%E8%AE%AEPPP/1.jpg" alt="..."></p>
+]]></content>
+      <categories>
+        <category>计算机网络</category>
+      </categories>
+      <tags>
+        <tag>数据链路层</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo发布博客并部署到远端</title>
+    <url>/2020/04/21/hexo%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%88%B0%E8%BF%9C%E7%AB%AF/</url>
+    <content><![CDATA[<h2 id="发布博客"><a href="#发布博客" class="headerlink" title="发布博客"></a>发布博客</h2><p>到博客根目录下打开git</p>
+<p>1、清除缓存</p>
+<blockquote>
+<p><strong>hexo clean</strong>  </p>
+</blockquote>
+<p>2、新建博客</p>
+<blockquote>
+<p><strong>hexo new post_name</strong> </p>
+</blockquote>
+<p>  在<code>source/_posts</code>中会生成文章<code>post_name.md</code></p>
+<a id="more"></a>
+
+<p>3、编写</p>
+<p>​    .md文件使用的是markdown，建议使用编译器 <a href="https://typora.io/" target="_blank" rel="noopener">Typora</a> ，对于markdown的学习 <a href="https://www.runoob.com/markdown/md-tutorial.html" target="_blank" rel="noopener">菜鸟教程</a></p>
+<p>4、保存之后</p>
+<blockquote>
+<p><strong>hexo g</strong></p>
+<p><strong>hexo s</strong></p>
+</blockquote>
+<h2 id="部署到远端"><a href="#部署到远端" class="headerlink" title="部署到远端"></a>部署到远端</h2><p>1、配置Git的用户信息：</p>
+<blockquote>
+<p><strong>git config –global user.name “GitHub用户名”</strong></p>
+<p><strong>git config –global user.email “GitHub邮箱”</strong></p>
+</blockquote>
+<p>2、生成ssh密钥文件</p>
+<blockquote>
+<p><strong>ssh-keygen -t rsa -C “Github邮箱”</strong></p>
+</blockquote>
+<p>密钥文件会自动保存到 <code>C:\Users\Administrator\.ssh</code> </p>
+<p>前往github创建个人仓库，仓库名字必须为：<strong>username.github.io</strong></p>
+<p>将刚新生成的公钥id_rsa.pub添加到Github中，完了以后使用命令<strong>ssh <a href="mailto:git@github.com">git@github.com</a></strong>测试</p>
+<p><img src="/2020/04/21/hexo%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%88%B0%E8%BF%9C%E7%AB%AF/1.png" alt="位置"></p>
+<p>3、准备部署</p>
+<p> 在正式部署之前，需要安装hexo的部署插件：</p>
+<blockquote>
+<p><strong>cnpm install hexo-deployer-git –save</strong></p>
+</blockquote>
+<p> 修改配置文件_config.yml，在deploy下指定仓库路径和部署的协议，具体配置如下：</p>
+<blockquote>
+<p><strong>deploy:</strong></p>
+<p> <strong>repository: 刚才创建的github仓库的git地址</strong></p>
+<p> <strong>type: git</strong></p>
+<p> <strong>branch: master</strong></p>
+</blockquote>
+<blockquote>
+<p>重新编译：<strong>hexo g</strong></p>
+<p>然后部署：<strong>hexo d</strong></p>
+</blockquote>
+<p>成功后就可以登录github的项目路径查看到该网站</p>
+<p><strong><a href="https://github用户名.github.io" target="_blank" rel="noopener">https://github用户名.github.io</a></strong></p>
+]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>3.6）媒体接入与随机接入</title>
     <url>/2020/05/13/3-6%EF%BC%89%E5%AA%92%E4%BD%93%E6%8E%A5%E5%85%A5%E4%B8%8E%E9%9A%8F%E6%9C%BA%E6%8E%A5%E5%85%A5/</url>
     <content><![CDATA[<h2 id="3-6-1-媒体介入控制的基本概念"><a href="#3-6-1-媒体介入控制的基本概念" class="headerlink" title="3.6.1 媒体介入控制的基本概念"></a>3.6.1 媒体介入控制的基本概念</h2><p> <strong>共享信道要着重考虑的一个问题就是如何协调多个发送和接收站点对一个共享传输媒体的占用，即<em>媒体接入控制MAC</em>（Medium Access Control).</strong></p>
@@ -609,64 +667,6 @@
       </categories>
       <tags>
         <tag>网络编程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo发布博客并部署到远端</title>
-    <url>/2020/04/21/hexo%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%88%B0%E8%BF%9C%E7%AB%AF/</url>
-    <content><![CDATA[<h2 id="发布博客"><a href="#发布博客" class="headerlink" title="发布博客"></a>发布博客</h2><p>到博客根目录下打开git</p>
-<p>1、清除缓存</p>
-<blockquote>
-<p><strong>hexo clean</strong>  </p>
-</blockquote>
-<p>2、新建博客</p>
-<blockquote>
-<p><strong>hexo new post_name</strong> </p>
-</blockquote>
-<p>  在<code>source/_posts</code>中会生成文章<code>post_name.md</code></p>
-<a id="more"></a>
-
-<p>3、编写</p>
-<p>​    .md文件使用的是markdown，建议使用编译器 <a href="https://typora.io/" target="_blank" rel="noopener">Typora</a> ，对于markdown的学习 <a href="https://www.runoob.com/markdown/md-tutorial.html" target="_blank" rel="noopener">菜鸟教程</a></p>
-<p>4、保存之后</p>
-<blockquote>
-<p><strong>hexo g</strong></p>
-<p><strong>hexo s</strong></p>
-</blockquote>
-<h2 id="部署到远端"><a href="#部署到远端" class="headerlink" title="部署到远端"></a>部署到远端</h2><p>1、配置Git的用户信息：</p>
-<blockquote>
-<p><strong>git config –global user.name “GitHub用户名”</strong></p>
-<p><strong>git config –global user.email “GitHub邮箱”</strong></p>
-</blockquote>
-<p>2、生成ssh密钥文件</p>
-<blockquote>
-<p><strong>ssh-keygen -t rsa -C “Github邮箱”</strong></p>
-</blockquote>
-<p>密钥文件会自动保存到 <code>C:\Users\Administrator\.ssh</code> </p>
-<p>前往github创建个人仓库，仓库名字必须为：<strong>username.github.io</strong></p>
-<p>将刚新生成的公钥id_rsa.pub添加到Github中，完了以后使用命令<strong>ssh <a href="mailto:git@github.com">git@github.com</a></strong>测试</p>
-<p><img src="/2020/04/21/hexo%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%88%B0%E8%BF%9C%E7%AB%AF/1.png" alt="位置"></p>
-<p>3、准备部署</p>
-<p> 在正式部署之前，需要安装hexo的部署插件：</p>
-<blockquote>
-<p><strong>cnpm install hexo-deployer-git –save</strong></p>
-</blockquote>
-<p> 修改配置文件_config.yml，在deploy下指定仓库路径和部署的协议，具体配置如下：</p>
-<blockquote>
-<p><strong>deploy:</strong></p>
-<p> <strong>repository: 刚才创建的github仓库的git地址</strong></p>
-<p> <strong>type: git</strong></p>
-<p> <strong>branch: master</strong></p>
-</blockquote>
-<blockquote>
-<p>重新编译：<strong>hexo g</strong></p>
-<p>然后部署：<strong>hexo d</strong></p>
-</blockquote>
-<p>成功后就可以登录github的项目路径查看到该网站</p>
-<p><strong><a href="https://github用户名.github.io" target="_blank" rel="noopener">https://github用户名.github.io</a></strong></p>
-]]></content>
-      <tags>
-        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -907,32 +907,6 @@
       </tags>
   </entry>
   <entry>
-    <title>网络编程</title>
-    <url>/2020/05/12/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</url>
-    <content><![CDATA[<h2 id="1、UDP编程"><a href="#1、UDP编程" class="headerlink" title="1、UDP编程"></a>1、UDP编程</h2><br>
-
-<h3 id="1-1、UdpClient"><a href="#1-1、UdpClient" class="headerlink" title="1.1、UdpClient:"></a>1.1、UdpClient:</h3><a id="more"></a>
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> UDP编程;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.net.DatagramPacket;</span><br><span class="line"><span class="keyword">import</span> java.net.DatagramSocket;</span><br><span class="line"><span class="keyword">import</span> java.net.InetSocketAddress;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * 发送端</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * 1、使用DatagramSocket 指定端口 创建发送端端</span></span><br><span class="line"><span class="comment"> * 2、准备数据 一定转成字节数组</span></span><br><span class="line"><span class="comment"> * 3、封装成DatagramPacket包裹 ，需要制定目的地</span></span><br><span class="line"><span class="comment"> * 4、发送包裹send（DatagramPacket p）</span></span><br><span class="line"><span class="comment"> * 5、释放资源</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UdpClient</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"发送方启动中。。。"</span>);</span><br><span class="line">		<span class="comment">// 1、使用DatagramSocket 指定端口 创建发送端端</span></span><br><span class="line">		DatagramSocket client = <span class="keyword">new</span> DatagramSocket(<span class="number">8888</span>);</span><br><span class="line">		<span class="comment">// 2、准备数据 一定转成字节数组</span></span><br><span class="line">		String data = <span class="string">"老刘很嚣张"</span>;</span><br><span class="line">		<span class="keyword">byte</span>[] datas = data.getBytes();</span><br><span class="line">		<span class="comment">// 3、封装成DatagramPacket包裹 ，需要制定目的地</span></span><br><span class="line">		DatagramPacket packet = <span class="keyword">new</span> DatagramPacket(datas, <span class="number">0</span>, datas.length, <span class="keyword">new</span> InetSocketAddress(<span class="string">"localhost"</span>, <span class="number">9999</span>));</span><br><span class="line">		<span class="comment">// 4、发送包裹send（DatagramPacket p）</span></span><br><span class="line">		client.send(packet);</span><br><span class="line">		<span class="comment">// 5、释放资源</span></span><br><span class="line">		client.close();</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="1-2、UdpServer"><a href="#1-2、UdpServer" class="headerlink" title="1.2、UdpServer"></a>1.2、UdpServer</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> UDP编程;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.net.DatagramPacket;</span><br><span class="line"><span class="keyword">import</span> java.net.DatagramSocket;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * 接收端</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * 1、使用DatagramSocket 指定端口 创建接收端</span></span><br><span class="line"><span class="comment"> * 2、准备容器 封装成DatagramPacket包裹</span></span><br><span class="line"><span class="comment"> * 3、阻塞式接受包裹receive（DatagramPacket p）</span></span><br><span class="line"><span class="comment"> * 4、分析数据</span></span><br><span class="line"><span class="comment"> * 	 byte[] getData()</span></span><br><span class="line"><span class="comment"> * 			getLength()</span></span><br><span class="line"><span class="comment"> * 5、释放资源</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UdpServer</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"接收方启动中。。。"</span>);</span><br><span class="line">		<span class="comment">//1、使用DatagramSocket 指定端口 创建接收端</span></span><br><span class="line">		DatagramSocket server = <span class="keyword">new</span> DatagramSocket(<span class="number">9999</span>); </span><br><span class="line">		<span class="comment">//2、准备容器 封装成DatagramPacket包裹</span></span><br><span class="line">		<span class="keyword">byte</span>[] container = <span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">1024</span>*<span class="number">64</span>];</span><br><span class="line">		DatagramPacket packet = <span class="keyword">new</span> DatagramPacket(container,<span class="number">0</span>,container.length);</span><br><span class="line">		<span class="comment">//3、阻塞式接受包裹receive（DatagramPacket p）</span></span><br><span class="line">		server.receive(packet); <span class="comment">//阻塞式，会有延迟</span></span><br><span class="line">		<span class="comment">//4、分析数据</span></span><br><span class="line">		<span class="comment">//	 byte[] getData()</span></span><br><span class="line">		<span class="comment">// 			getLength()</span></span><br><span class="line">		<span class="keyword">byte</span>[] datas = packet.getData();</span><br><span class="line">		<span class="keyword">int</span> len = packet.getLength();</span><br><span class="line">		System.out.println(<span class="keyword">new</span> String(datas,<span class="number">0</span>,len));</span><br><span class="line">		<span class="comment">//5、释放资源</span></span><br><span class="line">		server.close();</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><br><br></p>
-<h2 id="2、TCP编程"><a href="#2、TCP编程" class="headerlink" title="2、TCP编程"></a>2、TCP编程</h2><br>
-
-<h3 id="2-1、TcpClient"><a href="#2-1、TcpClient" class="headerlink" title="2.1、TcpClient"></a>2.1、TcpClient</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> TCP编程;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.InputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.OutputStream;</span><br><span class="line"><span class="keyword">import</span> java.net.Socket;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * -TCp通信的客户端：向服务器发送连接请求，给服务器发送数据，读取服务器回写的数据。</span></span><br><span class="line"><span class="comment"> * -表示客户端的类：</span></span><br><span class="line"><span class="comment"> * ----java.net.Socket：此类实现客户端套接字（也可以就叫“套接字”）。套接字是两台计算机间通信的端点。</span></span><br><span class="line"><span class="comment"> * ----套接字：包含了IP地址和端口号的网络单位。</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * -构造方法：</span></span><br><span class="line"><span class="comment"> * ----Socket(String host, int port) 创建一个流套接字并将其连接到指定主机上的指定端口号。</span></span><br><span class="line"><span class="comment"> * ----参数：</span></span><br><span class="line"><span class="comment"> * -------String host:服务器主机的名称/服务器的ip地址。</span></span><br><span class="line"><span class="comment"> * -------int port：服务器的端口号。</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * -成员方法：</span></span><br><span class="line"><span class="comment"> * ----OutputStream getOutputStream() 返回此套接字的输出流。</span></span><br><span class="line"><span class="comment"> * ----InputStream getInputStream() 返回此套接字的输入流。</span></span><br><span class="line"><span class="comment"> * ----close()关闭此套接字。</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * -实现步骤：</span></span><br><span class="line"><span class="comment"> * ----1、创建一个客户端对象Socket，构造方法绑定服务器的IP地址和端口号。</span></span><br><span class="line"><span class="comment"> * ----2、使用Socket对象中的方法getOutputStream()获取网络字节输出流OutputStream对象。</span></span><br><span class="line"><span class="comment"> * ----3、使用网络字节输出流OutputStream对象中的方法write，给服务器发送数据。</span></span><br><span class="line"><span class="comment"> * ----4、使用Socket对象中的方法getInputStream()获取网络字节输入流InputStream对象。</span></span><br><span class="line"><span class="comment"> * ----5、使用网络字节输入流InputStream对象中的方法read，读取服务器回写的数据。</span></span><br><span class="line"><span class="comment"> * ----6、释放资源（Socket)</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * -注意事项：</span></span><br><span class="line"><span class="comment"> * ----1、客户端和服务器端进行交互，必须使用Socket中提供的网络流，不能使用自己创建的流对象。</span></span><br><span class="line"><span class="comment"> * ----2、当我们创建客户端对象Socket的时候，就会去请求服务器和服务器经过三次握手建立连接通路</span></span><br><span class="line"><span class="comment"> * 		---如果这时服务器没有启动，那么就会抛出异常</span></span><br><span class="line"><span class="comment"> * 		---如果这时服务器已经启动，那么就可以进行交互了	</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TcpClient</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">		<span class="comment">//1、创建一个客户端对象Socket，构造方法绑定服务器的IP地址和端口号。</span></span><br><span class="line">		Socket socket = <span class="keyword">new</span> Socket(<span class="string">"localhost"</span>, <span class="number">8888</span>);</span><br><span class="line">		<span class="comment">//2、使用Socket对象中的方法getOutputStream()获取网络字节输出流OutputStream对象。</span></span><br><span class="line">		OutputStream os = socket.getOutputStream(); </span><br><span class="line">		<span class="comment">//3、使用网络字节输出流OutputStream对象中的方法write，给服务器发送数据。</span></span><br><span class="line">		os.write(<span class="string">"客户端：天下风云出我辈，一入江湖岁月催"</span>.getBytes());</span><br><span class="line">		<span class="comment">//4、使用Socket对象中的方法getInputStream()获取网络字节输入流InputStream对象。</span></span><br><span class="line">		InputStream is = socket.getInputStream(); </span><br><span class="line">		<span class="comment">//5、使用网络字节输入流InputStream对象中的方法read，读取服务器回写的数据。</span></span><br><span class="line">		<span class="keyword">byte</span>[] bytes = <span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">1024</span>];</span><br><span class="line">		<span class="keyword">int</span> len = is.read(bytes);</span><br><span class="line">		System.out.println(<span class="keyword">new</span> String(bytes,<span class="number">0</span>,len));</span><br><span class="line">		<span class="comment">//6、释放资源（Socket)</span></span><br><span class="line">		socket.close();</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-2、TcpServer"><a href="#2-2、TcpServer" class="headerlink" title="2.2、TcpServer"></a>2.2、TcpServer</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> TCP编程;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.InputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.OutputStream;</span><br><span class="line"><span class="keyword">import</span> java.net.ServerSocket;</span><br><span class="line"><span class="keyword">import</span> java.net.Socket;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * -TCp通信的服务器端：接收客户端的请求，读取客户端发送的数据，给客户端回写数据。</span></span><br><span class="line"><span class="comment"> * -表示服务器的类：</span></span><br><span class="line"><span class="comment"> * ----java.net.ServerSocket：这个类实现了服务器套接字。</span></span><br><span class="line"><span class="comment"> * ----套接字：包含了IP地址和端口号的网络单位。</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * -构造方法：</span></span><br><span class="line"><span class="comment"> * ----ServerSocket(int port) 创建一个服务器套接字，绑定到指定的端口。 </span></span><br><span class="line"><span class="comment"> * ----参数：</span></span><br><span class="line"><span class="comment"> * -------int port：端口号。</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * -服务器端必须明确一件事情，必须的知道是哪一个客户端请求的服务器  所以可以使用accept方法获取到请求的客户端对象Socket。</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * -成员方法：</span></span><br><span class="line"><span class="comment"> * ----Socket accept() 监听要对这个套接字作出的连接并接受它。 </span></span><br><span class="line"><span class="comment"> * ----close()关闭此套接字。</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * -实现步骤：</span></span><br><span class="line"><span class="comment"> * ----1、创建一个服务器端ServerSocket对象和系统要指定的端口号。</span></span><br><span class="line"><span class="comment"> * ----2、使用ServerSocket对象中的方法accept获取到请求客户端的Socket对象。</span></span><br><span class="line"><span class="comment"> * ----3、使用Socket对象中的方法getInputStream()获取网络字节输入流InputStream对象。</span></span><br><span class="line"><span class="comment"> * ----4、使用网络字节输入流InputStream对象中的方法read，读取客户端发送的数据。</span></span><br><span class="line"><span class="comment"> * ----5、使用Socket对象中的方法getOutputStream()获取网络字节输出流OutputStream对象。</span></span><br><span class="line"><span class="comment"> * ----6、使用网络字节输出流OutputStream对象中的方法write，给客户端回写数据。</span></span><br><span class="line"><span class="comment"> * ----7、释放资源（Socket，ServerSocket)</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TcpServer</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">		<span class="comment">//1、创建一个服务器端ServerSocket对象和系统要指定的端口号。</span></span><br><span class="line">		ServerSocket server = <span class="keyword">new</span> ServerSocket(<span class="number">8888</span>); </span><br><span class="line">		<span class="comment">//2、使用ServerSocket对象中的方法accept获取到请求客户端的Socket对象。</span></span><br><span class="line">		Socket socket = server.accept(); </span><br><span class="line">		<span class="comment">//3、使用Socket对象中的方法getInputStream()获取网络字节输入流InputStream对象。</span></span><br><span class="line">		InputStream is = socket.getInputStream(); </span><br><span class="line">		<span class="comment">//4、使用网络字节输入流InputStream对象中的方法read，读取客户端发送的数据。</span></span><br><span class="line">		<span class="keyword">byte</span>[] bytes = <span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">1024</span>];</span><br><span class="line">		<span class="keyword">int</span> len = is.read(bytes);</span><br><span class="line">		System.out.println(<span class="keyword">new</span> String(bytes,<span class="number">0</span>,len));</span><br><span class="line">		<span class="comment">//5、使用Socket对象中的方法getOutputStream()获取网络字节输出流OutputStream对象。</span></span><br><span class="line">		OutputStream os = socket.getOutputStream();</span><br><span class="line">		<span class="comment">//6、使用网络字节输出流OutputStream对象中的方法write，给客户端回写数据。</span></span><br><span class="line">		os.write(<span class="string">"服务器：皇图霸业谈笑中，不胜人生一场醉"</span>.getBytes());</span><br><span class="line">		<span class="comment">//7、释放资源（Socket，ServerSocket)</span></span><br><span class="line">		socket.close();</span><br><span class="line">		server.close();</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>java</category>
-      </categories>
-      <tags>
-        <tag>网络编程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>说一说我在安装hexo过程中踩到的坑</title>
     <url>/2020/04/20/%E8%AF%B4%E4%B8%80%E8%AF%B4%E6%88%91%E5%9C%A8%E5%AE%89%E8%A3%85hexo%E8%BF%87%E7%A8%8B%E4%B8%AD%E8%B8%A9%E5%88%B0%E7%9A%84%E5%9D%91/</url>
     <content><![CDATA[<p>第一次部署hexo，可以说把所有能踩的坑踩个遍，下面说说：</p>
@@ -1013,6 +987,32 @@
       </categories>
       <tags>
         <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网络编程</title>
+    <url>/2020/05/12/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</url>
+    <content><![CDATA[<h2 id="1、UDP编程"><a href="#1、UDP编程" class="headerlink" title="1、UDP编程"></a>1、UDP编程</h2><br>
+
+<h3 id="1-1、UdpClient"><a href="#1-1、UdpClient" class="headerlink" title="1.1、UdpClient:"></a>1.1、UdpClient:</h3><a id="more"></a>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> UDP编程;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.net.DatagramPacket;</span><br><span class="line"><span class="keyword">import</span> java.net.DatagramSocket;</span><br><span class="line"><span class="keyword">import</span> java.net.InetSocketAddress;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * 发送端</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * 1、使用DatagramSocket 指定端口 创建发送端端</span></span><br><span class="line"><span class="comment"> * 2、准备数据 一定转成字节数组</span></span><br><span class="line"><span class="comment"> * 3、封装成DatagramPacket包裹 ，需要制定目的地</span></span><br><span class="line"><span class="comment"> * 4、发送包裹send（DatagramPacket p）</span></span><br><span class="line"><span class="comment"> * 5、释放资源</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UdpClient</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"发送方启动中。。。"</span>);</span><br><span class="line">		<span class="comment">// 1、使用DatagramSocket 指定端口 创建发送端端</span></span><br><span class="line">		DatagramSocket client = <span class="keyword">new</span> DatagramSocket(<span class="number">8888</span>);</span><br><span class="line">		<span class="comment">// 2、准备数据 一定转成字节数组</span></span><br><span class="line">		String data = <span class="string">"老刘很嚣张"</span>;</span><br><span class="line">		<span class="keyword">byte</span>[] datas = data.getBytes();</span><br><span class="line">		<span class="comment">// 3、封装成DatagramPacket包裹 ，需要制定目的地</span></span><br><span class="line">		DatagramPacket packet = <span class="keyword">new</span> DatagramPacket(datas, <span class="number">0</span>, datas.length, <span class="keyword">new</span> InetSocketAddress(<span class="string">"localhost"</span>, <span class="number">9999</span>));</span><br><span class="line">		<span class="comment">// 4、发送包裹send（DatagramPacket p）</span></span><br><span class="line">		client.send(packet);</span><br><span class="line">		<span class="comment">// 5、释放资源</span></span><br><span class="line">		client.close();</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-2、UdpServer"><a href="#1-2、UdpServer" class="headerlink" title="1.2、UdpServer"></a>1.2、UdpServer</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> UDP编程;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.net.DatagramPacket;</span><br><span class="line"><span class="keyword">import</span> java.net.DatagramSocket;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * 接收端</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * 1、使用DatagramSocket 指定端口 创建接收端</span></span><br><span class="line"><span class="comment"> * 2、准备容器 封装成DatagramPacket包裹</span></span><br><span class="line"><span class="comment"> * 3、阻塞式接受包裹receive（DatagramPacket p）</span></span><br><span class="line"><span class="comment"> * 4、分析数据</span></span><br><span class="line"><span class="comment"> * 	 byte[] getData()</span></span><br><span class="line"><span class="comment"> * 			getLength()</span></span><br><span class="line"><span class="comment"> * 5、释放资源</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UdpServer</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"接收方启动中。。。"</span>);</span><br><span class="line">		<span class="comment">//1、使用DatagramSocket 指定端口 创建接收端</span></span><br><span class="line">		DatagramSocket server = <span class="keyword">new</span> DatagramSocket(<span class="number">9999</span>); </span><br><span class="line">		<span class="comment">//2、准备容器 封装成DatagramPacket包裹</span></span><br><span class="line">		<span class="keyword">byte</span>[] container = <span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">1024</span>*<span class="number">64</span>];</span><br><span class="line">		DatagramPacket packet = <span class="keyword">new</span> DatagramPacket(container,<span class="number">0</span>,container.length);</span><br><span class="line">		<span class="comment">//3、阻塞式接受包裹receive（DatagramPacket p）</span></span><br><span class="line">		server.receive(packet); <span class="comment">//阻塞式，会有延迟</span></span><br><span class="line">		<span class="comment">//4、分析数据</span></span><br><span class="line">		<span class="comment">//	 byte[] getData()</span></span><br><span class="line">		<span class="comment">// 			getLength()</span></span><br><span class="line">		<span class="keyword">byte</span>[] datas = packet.getData();</span><br><span class="line">		<span class="keyword">int</span> len = packet.getLength();</span><br><span class="line">		System.out.println(<span class="keyword">new</span> String(datas,<span class="number">0</span>,len));</span><br><span class="line">		<span class="comment">//5、释放资源</span></span><br><span class="line">		server.close();</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><br><br></p>
+<h2 id="2、TCP编程"><a href="#2、TCP编程" class="headerlink" title="2、TCP编程"></a>2、TCP编程</h2><br>
+
+<h3 id="2-1、TcpClient"><a href="#2-1、TcpClient" class="headerlink" title="2.1、TcpClient"></a>2.1、TcpClient</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> TCP编程;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.InputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.OutputStream;</span><br><span class="line"><span class="keyword">import</span> java.net.Socket;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * -TCp通信的客户端：向服务器发送连接请求，给服务器发送数据，读取服务器回写的数据。</span></span><br><span class="line"><span class="comment"> * -表示客户端的类：</span></span><br><span class="line"><span class="comment"> * ----java.net.Socket：此类实现客户端套接字（也可以就叫“套接字”）。套接字是两台计算机间通信的端点。</span></span><br><span class="line"><span class="comment"> * ----套接字：包含了IP地址和端口号的网络单位。</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * -构造方法：</span></span><br><span class="line"><span class="comment"> * ----Socket(String host, int port) 创建一个流套接字并将其连接到指定主机上的指定端口号。</span></span><br><span class="line"><span class="comment"> * ----参数：</span></span><br><span class="line"><span class="comment"> * -------String host:服务器主机的名称/服务器的ip地址。</span></span><br><span class="line"><span class="comment"> * -------int port：服务器的端口号。</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * -成员方法：</span></span><br><span class="line"><span class="comment"> * ----OutputStream getOutputStream() 返回此套接字的输出流。</span></span><br><span class="line"><span class="comment"> * ----InputStream getInputStream() 返回此套接字的输入流。</span></span><br><span class="line"><span class="comment"> * ----close()关闭此套接字。</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * -实现步骤：</span></span><br><span class="line"><span class="comment"> * ----1、创建一个客户端对象Socket，构造方法绑定服务器的IP地址和端口号。</span></span><br><span class="line"><span class="comment"> * ----2、使用Socket对象中的方法getOutputStream()获取网络字节输出流OutputStream对象。</span></span><br><span class="line"><span class="comment"> * ----3、使用网络字节输出流OutputStream对象中的方法write，给服务器发送数据。</span></span><br><span class="line"><span class="comment"> * ----4、使用Socket对象中的方法getInputStream()获取网络字节输入流InputStream对象。</span></span><br><span class="line"><span class="comment"> * ----5、使用网络字节输入流InputStream对象中的方法read，读取服务器回写的数据。</span></span><br><span class="line"><span class="comment"> * ----6、释放资源（Socket)</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * -注意事项：</span></span><br><span class="line"><span class="comment"> * ----1、客户端和服务器端进行交互，必须使用Socket中提供的网络流，不能使用自己创建的流对象。</span></span><br><span class="line"><span class="comment"> * ----2、当我们创建客户端对象Socket的时候，就会去请求服务器和服务器经过三次握手建立连接通路</span></span><br><span class="line"><span class="comment"> * 		---如果这时服务器没有启动，那么就会抛出异常</span></span><br><span class="line"><span class="comment"> * 		---如果这时服务器已经启动，那么就可以进行交互了	</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TcpClient</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">		<span class="comment">//1、创建一个客户端对象Socket，构造方法绑定服务器的IP地址和端口号。</span></span><br><span class="line">		Socket socket = <span class="keyword">new</span> Socket(<span class="string">"localhost"</span>, <span class="number">8888</span>);</span><br><span class="line">		<span class="comment">//2、使用Socket对象中的方法getOutputStream()获取网络字节输出流OutputStream对象。</span></span><br><span class="line">		OutputStream os = socket.getOutputStream(); </span><br><span class="line">		<span class="comment">//3、使用网络字节输出流OutputStream对象中的方法write，给服务器发送数据。</span></span><br><span class="line">		os.write(<span class="string">"客户端：天下风云出我辈，一入江湖岁月催"</span>.getBytes());</span><br><span class="line">		<span class="comment">//4、使用Socket对象中的方法getInputStream()获取网络字节输入流InputStream对象。</span></span><br><span class="line">		InputStream is = socket.getInputStream(); </span><br><span class="line">		<span class="comment">//5、使用网络字节输入流InputStream对象中的方法read，读取服务器回写的数据。</span></span><br><span class="line">		<span class="keyword">byte</span>[] bytes = <span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">1024</span>];</span><br><span class="line">		<span class="keyword">int</span> len = is.read(bytes);</span><br><span class="line">		System.out.println(<span class="keyword">new</span> String(bytes,<span class="number">0</span>,len));</span><br><span class="line">		<span class="comment">//6、释放资源（Socket)</span></span><br><span class="line">		socket.close();</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-2、TcpServer"><a href="#2-2、TcpServer" class="headerlink" title="2.2、TcpServer"></a>2.2、TcpServer</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> TCP编程;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.InputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.OutputStream;</span><br><span class="line"><span class="keyword">import</span> java.net.ServerSocket;</span><br><span class="line"><span class="keyword">import</span> java.net.Socket;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * -TCp通信的服务器端：接收客户端的请求，读取客户端发送的数据，给客户端回写数据。</span></span><br><span class="line"><span class="comment"> * -表示服务器的类：</span></span><br><span class="line"><span class="comment"> * ----java.net.ServerSocket：这个类实现了服务器套接字。</span></span><br><span class="line"><span class="comment"> * ----套接字：包含了IP地址和端口号的网络单位。</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * -构造方法：</span></span><br><span class="line"><span class="comment"> * ----ServerSocket(int port) 创建一个服务器套接字，绑定到指定的端口。 </span></span><br><span class="line"><span class="comment"> * ----参数：</span></span><br><span class="line"><span class="comment"> * -------int port：端口号。</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * -服务器端必须明确一件事情，必须的知道是哪一个客户端请求的服务器  所以可以使用accept方法获取到请求的客户端对象Socket。</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * -成员方法：</span></span><br><span class="line"><span class="comment"> * ----Socket accept() 监听要对这个套接字作出的连接并接受它。 </span></span><br><span class="line"><span class="comment"> * ----close()关闭此套接字。</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * -实现步骤：</span></span><br><span class="line"><span class="comment"> * ----1、创建一个服务器端ServerSocket对象和系统要指定的端口号。</span></span><br><span class="line"><span class="comment"> * ----2、使用ServerSocket对象中的方法accept获取到请求客户端的Socket对象。</span></span><br><span class="line"><span class="comment"> * ----3、使用Socket对象中的方法getInputStream()获取网络字节输入流InputStream对象。</span></span><br><span class="line"><span class="comment"> * ----4、使用网络字节输入流InputStream对象中的方法read，读取客户端发送的数据。</span></span><br><span class="line"><span class="comment"> * ----5、使用Socket对象中的方法getOutputStream()获取网络字节输出流OutputStream对象。</span></span><br><span class="line"><span class="comment"> * ----6、使用网络字节输出流OutputStream对象中的方法write，给客户端回写数据。</span></span><br><span class="line"><span class="comment"> * ----7、释放资源（Socket，ServerSocket)</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TcpServer</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">		<span class="comment">//1、创建一个服务器端ServerSocket对象和系统要指定的端口号。</span></span><br><span class="line">		ServerSocket server = <span class="keyword">new</span> ServerSocket(<span class="number">8888</span>); </span><br><span class="line">		<span class="comment">//2、使用ServerSocket对象中的方法accept获取到请求客户端的Socket对象。</span></span><br><span class="line">		Socket socket = server.accept(); </span><br><span class="line">		<span class="comment">//3、使用Socket对象中的方法getInputStream()获取网络字节输入流InputStream对象。</span></span><br><span class="line">		InputStream is = socket.getInputStream(); </span><br><span class="line">		<span class="comment">//4、使用网络字节输入流InputStream对象中的方法read，读取客户端发送的数据。</span></span><br><span class="line">		<span class="keyword">byte</span>[] bytes = <span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">1024</span>];</span><br><span class="line">		<span class="keyword">int</span> len = is.read(bytes);</span><br><span class="line">		System.out.println(<span class="keyword">new</span> String(bytes,<span class="number">0</span>,len));</span><br><span class="line">		<span class="comment">//5、使用Socket对象中的方法getOutputStream()获取网络字节输出流OutputStream对象。</span></span><br><span class="line">		OutputStream os = socket.getOutputStream();</span><br><span class="line">		<span class="comment">//6、使用网络字节输出流OutputStream对象中的方法write，给客户端回写数据。</span></span><br><span class="line">		os.write(<span class="string">"服务器：皇图霸业谈笑中，不胜人生一场醉"</span>.getBytes());</span><br><span class="line">		<span class="comment">//7、释放资源（Socket，ServerSocket)</span></span><br><span class="line">		socket.close();</span><br><span class="line">		server.close();</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>网络编程</tag>
       </tags>
   </entry>
 </search>
